@@ -46,7 +46,7 @@
     #header-tape {
         height: 100%;
         width: 100%;
-        background-color: rgb(36, 40, 52);
+        background-color: #001F4B;
     }
 }
 
@@ -72,19 +72,44 @@
     }
 
     #header-tape {
-        height: 145px;
-        width: 1077px;
-        background-color: rgb(36, 40, 52);
+        height: 241px;
+        margin-top: 20%;
+        margin-left: 2%;
+        width: 1100px;
+        padding: 50px 45px 60px 45px;
+        background-color: #001F4B;
+    }
+
+    #header-tape p {
+        font-size: 1.5rem;
+        line-height: 1.8125rem;
+    }
+
+    #greetings {
+        margin-top: 10%;
+        padding: 0px 300px;
+    }
+
+    .greetings-small {
+        font-size: 1rem;
+        line-height: 34px;
+    }
+
+    .greetings-big {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    #quote {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 630px;
+        margin-bottom: 90px;
     }
 }
 
 #header-tape p {
     margin-bottom: 0;
-}
-
-#header-tape p,
-#header-tape span {
-    font-size: 18px;
 }
 
 .hero-info::before {
@@ -102,4 +127,211 @@
     line-height: 3.875rem;
     font-weight: 900;
     margin-top: 0;
+}
+
+#search-box {
+    display: flex;
+}
+
+.search-container {
+    padding: 20px 20px;
+    background-color: #0693CA;
+}
+
+.search{
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
+
+.search input{
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+}
+
+.search input:focus{
+    box-shadow: none;
+    border: 2px solid blue;
+}
+
+.search .fa-search{
+    position: absolute;
+    top: 20px;
+    left: 16px;
+}
+
+.search button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    font-weight: bold;
+}
+
+.tape ul {
+    padding-left: 0px;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    list-style: none;
+}
+
+.tape ul li {
+    list-style-type: none;
+    padding-bottom: 7px;
+}
+
+.tape ul li a {
+    color: #fff;
+}
+
+#annual-figures {
+    background-color: #F0F7FA;
+    margin-bottom: 90px;
+}
+
+#annual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#annual h2 {
+    color: #001f4b;
+    font-size: 1.75rem;
+    line-height: 2.1875rem;
+    font-weight: 700;
+}
+
+#annual p {
+    font-size: 1rem;
+    line-height: 34px;
+    color: #222;
+    font-weight: 400;
+}
+
+.btn-main {
+    background-color: #001f4b;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+
+.quote-text {
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    padding: 2.1875rem 0;
+    border-bottom: .25rem  solid #ffd800;
+    border-top: .25rem  solid #ffd800;
+    color: #222;
+    font-weight: 400;
+}
+
+.quote-person {
+    color: #222;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-top: 1.25rem;
+}
+
+.quote-person-job {
+    color: #222;
+    font-weight: 400;
+}
+
+#discover {
+    margin-bottom: 90px;
+}
+
+#discover-port {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#discover-port h3:first-child {
+    color: #0693ca;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+
+#discover-port h3:nth-child(2) {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    columns: #001f4b;
+}
+
+#img-text {
+    position: relative;
+
+    color: #fff;
+}
+
+.textImg {
+    position: absolute;
+    top: 355px;
+    left: 50px;
+}
+
+.newsText {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+
+.textImg h3 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+
+#evolving {
+    background-color: #F0F7FA;
+    padding: 80px 12px;
+    margin-bottom: 90px;
+}
+
+#evolvingPort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#evolvingPort h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.1825rem;
+    color: #001f4b;
+}
+
+#evolvingPort p {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    color: #001f4b;
+}
+
+.feature-text a {
+    color: #001f4b;
+    text-decoration: none;
+    border-bottom: .125rem  solid #001f4b;
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+    font-weight: 700;
+}
+
+.feature-text p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 34px;
+    color: #222;
+}
+
+.evolving-icon {
+    font-size: 1.875rem;
+    color: #0693ca;
 }
