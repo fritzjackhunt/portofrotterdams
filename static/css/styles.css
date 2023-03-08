@@ -64,7 +64,7 @@
 
     .hero-1 {
         position: absolute;
-        margin-top: -620px;
+        margin-top: -510px;
         color: white;
         font-weight: bolder;
         z-index: 1;
@@ -334,4 +334,145 @@
 .evolving-icon {
     font-size: 1.875rem;
     color: #0693ca;
+}
+
+.radio-form {
+    display: flex;   
+}
+
+.footer-search {
+    position: relative;
+}
+
+.footer-search input {
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+}
+
+.footer-search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 126px;
+    font-weight: bold;
+}
+
+#footer {
+    background-color: #0693CA;
+    color: #fff;
+}
+
+#footer-content {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#footer-content::after {
+    left: -2.1875rem;
+    width: 20%;
+    height: 46%;
+}
+
+#footer-content::after {
+    background-color: #001f4b;
+    bottom: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    transform: skewY(57deg);
+    transform-origin: 0 0;
+    z-index: -1;
+}
+
+#footer-pic {
+    background-color: #0693ca;
+    background-image: url("/static/pictures/footer.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#footer-pic::before,
+#footer-pic::after {
+    background-color: #0693ca;
+    content: '';
+    display: block;
+    height: 100%;
+    left: -0.0625rem;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+#footer-pic::after {
+    bottom: -4.4375rem;
+    transform: skewY(69deg);
+    transform-origin: 0 0;
+}
+
+#footer-pic::before {
+    top: -9.5625rem;
+    transform: skewY(127deg);
+    transform-origin: 0 0;
+}
+
+#footer-links {
+    background-color: #001F4B;
+    margin: 0;
+}
+
+#footer-links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-links-list {
+    column-count: 2;
+}
+
+.footer-links-list li {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-right: 3.125rem;
+    page-break-inside: avoid;
+}
+
+.footer-links-list li a {
+    color: #fff;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.5625rem;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.contact-data,
+.social-data  {
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.5625rem;
+}
+
+.footer-links-main li {
+    line-height: 1.5625rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#contact-content a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: .875rem;
+    line-height: 1.5625rem;
 }
