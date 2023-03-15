@@ -2,6 +2,26 @@
     box-sizing: border-box;
 }
 
+.logo-img {
+    display: block;
+    background-size: 100% 100%;
+    color: #001f4b;
+    background-image: url("/static/pictures/por-logo.svg");
+    height: 45px;
+    width: 150px;
+    background-repeat: no-repeat;
+}
+
+.footerLogo-img {
+    display: block;
+    background-size: 100% 100%;
+    color: #fff;
+    background-image: url("/static/pictures/por-logo-inverted.svg");
+    height: 45px;
+    width: 150px;
+    background-repeat: no-repeat;
+}
+
 .top-bar {
     background-color: #001f4b;
     line-height: 1.75rem;
@@ -31,6 +51,11 @@
 .top-bar-links ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+#myHomeVideo {
+    opacity: 0.9;
+    background-color: #222;
 }
 
 /* Small Devices Only */
@@ -86,7 +111,7 @@
     }
 
     #greetings {
-        margin-top: 10%;
+        margin-top: 20%;
         padding: 0px 300px;
     }
 
@@ -266,9 +291,20 @@
     columns: #001f4b;
 }
 
+#contactImg-text {
+    position: relative;
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 12.5px;
+}
+
+#contactImg-text:nth-child(4) {
+    margin-right: 0px;
+}
+
 #img-text {
     position: relative;
-
     color: #fff;
 }
 
@@ -284,7 +320,8 @@
     left: 20px;
 }
 
-.textImg h3 {
+.textImg h3,
+.contactText h3 {
     font-size: 1.5rem;
     line-height: 2.25rem;
     font-weight: 700;
@@ -475,4 +512,126 @@
     background-color: transparent;
     font-size: .875rem;
     line-height: 1.5625rem;
+}
+
+
+/* Breadcrumbs styling STARTS */
+
+#breadcrumb-con {
+    background-color: #F0F7FA;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    padding: 0.5rem 0;
+    padding-left: 10px;
+}
+
+#breadcrumb-con li {
+    display: flex;
+    align-items: center;
+    color: #0693CA;
+}
+
+#breadcrumb-con ol {
+    margin-bottom: 0
+}
+
+#breadcrumb-con a {
+    text-decoration: none;
+    color: #0693ca;
+}
+
+/* Breadcrumbs styling ENDS */
+
+
+/* Contact page styling STARTS */
+
+#contact-page h1 {
+    margin: 0 auto 1.875rem;
+    padding: 2.1875rem 0.9375rem 0;
+    font-size: 3.375rem;
+    line-height: 4.21875rem;
+    font-weight: 900;
+}
+
+.contactText {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.contactPage-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactPage-links a {
+    color: #fff;
+}
+
+
+/* Contact page styling ENDS */
+
+.imgText-con::after {
+    content: '';
+    background: linear-gradient(360deg, rgba(34, 34, 34, 0.8) 0%, rgba(34, 34, 34, 0) 100%);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.col-lg-xs {
+    flex: 0 0 auto;
+    width: 24.0%;
+}
+
+#location-container {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+    margin-bottom: 90px;
+}
+
+.contactPage-links ul {
+    list-style-type: none;
+    padding-left: 0rem;
+}
+
+.contactPage-links ul li {
+    margin-bottom: 5%;
+}
+
+#faq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    background-color: #F0F7FA;
+}
+
+#faq-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#faq-links ul {
+    list-style-type: none;
+}
+
+#faq-links ul li:not(:last-child) {
+    margin-bottom: 2.5rem;
+    list-style: none;
+}
+
+#faq-links ul li a {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #001F4B;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-decoration: underline;
+    font-weight: 400;
 }

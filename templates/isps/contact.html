@@ -1,0 +1,191 @@
+{% extends 'isps/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid" id="breadcrumb-con">
+    <div class="row">
+        <div class="col-lg-12">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{% url 'homepage' %}">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+              </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="contact-page">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>CONTACT</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="location-container">
+    <div class="row">
+
+        <div class="col-lg-xs" id="contactImg-text">
+          <div class="imgText-con">
+            <a href="#" target="_blank"><img src="{% static 'pictures/contactpage0.jpg' %}" class="d-block w-100 background-images" alt="..."></a>
+          </div>
+          
+          <div class="container">
+            <div class="contactText col-lg-11">
+              <h3>HARBOUR COORDINATION CENTRE</h3>
+              <div class="contactPage-links">
+                <ul>
+                    <li><i class="fas fa-phone">&nbsp; &nbsp;</i><a href="">+31 (0)10 252 1000</a></li>
+                    <li><i class="far fa-user">&nbsp; &nbsp;</i><a href="">All departments</a></li>
+                    <li><i class="fas fa-map-marker-alt">&nbsp; &nbsp;</i><a href="">Plan route</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-xs" id="contactImg-text">
+          <div class="imgText-con">
+            <a href="#" target="_blank"><img src="{% static 'pictures/contactpage1.jpg' %}" class="d-block w-100 background-images" alt="..."></a>
+          </div>
+          
+          <div class="container">
+            <div class="contactText col-lg-11">
+                <h3>PORT OF ROTTERDAM AUTHORITY</h3>
+                <div class="contactPage-links">
+                  <ul>
+                      <li><i class="fas fa-phone">&nbsp; &nbsp;</i><a href="">+31 (0)10 252 1000</a></li>
+                      <li><i class="far fa-user">&nbsp; &nbsp;</i><a href="">All departments</a></li>
+                      <li><i class="fas fa-map-marker-alt">&nbsp; &nbsp;</i><a href="">Plan route</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-lg-xs" id="contactImg-text">
+          <div class="imgText-con">
+            <a href="#" target="_blank"><img src="{% static 'pictures/contactpage3.jpeg' %}" class="d-block w-100 background-images" alt="..."></a>
+          </div>
+          
+          <div class="container">
+            <div class="contactText col-lg-10">
+                <h3>FUTURELAND</h3>
+                <div class="contactPage-links">
+                  <ul>
+                      <li><i class="fas fa-phone">&nbsp; &nbsp;</i><a href="">+31 (0)10 252 1000</a></li>
+                      <li><i class="far fa-user">&nbsp; &nbsp;</i><a href="">All departments</a></li>
+                      <li><i class="fas fa-map-marker-alt">&nbsp; &nbsp;</i><a href="">Plan route</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-lg-xs" id="contactImg-text">
+          <div class="imgText-con">
+            <a href="#" target="_blank"><img src="{% static 'pictures/contactpage2.jpg' %}" class="d-block w-100 background-images" alt="..."></a>
+          </div>
+          
+          <div class="container">
+            <div class="contactText col-lg-10">
+                <h3>PORT PAVILION</h3>
+                <div class="contactPage-links">
+                  <ul>
+                      <li><i class="fas fa-phone">&nbsp; &nbsp;</i><a href="">+31 (0)10 252 1000</a></li>
+                      <li><i class="far fa-user">&nbsp; &nbsp;</i><a href="">All departments</a></li>
+                      <li><i class="fas fa-map-marker-alt">&nbsp; &nbsp;</i><a href="">Plan route</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="faq">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Frequently asked questions</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Are you looking for a company to ship your private or business goods to/from Rotterdam?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Read detailed information about direct connections to Port of Rotterdam.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Drones in the port of Rotterdam
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Remotely Piloted Aircraft Systems (RPAS) or drones are becoming increasingly popular. Still, you are not allowed to fly a drone wherever you like. For safety reasons, anyone operating a drone needs to abide by the rules, and in many cases, you need to have a permit. Read more about drones in the port of Rotterdam.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Is your company interested in a tour of the port?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Customised tour and bus or boat trip
+                        Book a tour around FutureLand or a customised presentation about Maasvlakte 2. A FutureLand Express bus tour across the new land and a boat trip through the new ports on the FutureLand Ferry offer unique views of the Port of Rotterdam’s expansion. Our information officer will be delighted to discuss the details with you.
+                        
+                        View the options for a tour of the port with a guide (for groups) at Industrieel toerisme.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Are you looking for vacancies in the port of Rotterdam or the Port of Rotterdam Authority?
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Read everything about working in the port and job sites.
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Are you interested in a tour of the port and are you a visitor or tourist?
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Check out the possibilities at Spido and FutureLand.
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6" id="faq-links">
+            <div>
+                <ul>
+                    <li><a href="#">Route description World Port Center &nbsp; <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#">Route description FutureLand &nbsp; <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#">Whistle-blower complaint &nbsp; <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
